@@ -1,17 +1,14 @@
 {
   "name": "@otokton/griiot-core",
-  "version": "1.0.2",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "version": "1.0.10",
+  "main": "index.js",
+  "types": "index.d.ts",
   "author": {
     "name": "Otokton"
   },
-  "files": [
-    "dist/*"
-  ],
   "scripts": {
     "build": "tsc --declaration",
-    "push": "npm publish --access public"
+    "push": "cp package.json dist && npm publish ./dist --access public"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
