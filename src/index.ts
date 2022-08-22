@@ -1,4 +1,4 @@
-export * from './amqp';
+export * as amqp from './amqp';
 export * from './core';
-export * from './gcloud';
-export * from './kong';
+export * as gcloud from './gcloud';
+export * as kong from './kong';
