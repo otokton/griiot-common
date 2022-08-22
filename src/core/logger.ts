@@ -3,7 +3,7 @@ const { combine } = winston.format;
 
 const colorizer = winston.format.colorize();
 
-const logger = winston.createLogger({
+export const logger = winston.createLogger({
   level: 'debug',
   format: combine(
     winston.format.timestamp(),
@@ -23,5 +23,3 @@ if (process.env.NODE_ENV === 'production') {
     .add(new transports.File({ filename: 'error.log', level: 'error' }))
     .add(new transports.File({ filename: 'combined.log' }));
 }
-
-export default logger;
