@@ -1,4 +1,4 @@
-export enum SecretSchematicBackendType {
+export enum SecretSchematicApiType {
   SERVICE_NAME = 'SERVICE_NAME',
   PROJECT_ID = 'PROJECT_ID',
   MONGODB_URI = 'MONGODB_URI',

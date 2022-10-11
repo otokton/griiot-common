@@ -1,2 +1,2 @@
-export * from './enums/secrets';
-export * from './enums/workflows';
+export * from './enums/secretType';
+export * from './enums/workflowType';
