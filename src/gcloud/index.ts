@@ -1,1 +1,1 @@
-export * from './models/gcloudServiceTemplate';
+export * from './types/gcloudServiceTemplate';

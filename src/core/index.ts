@@ -4,5 +4,6 @@ export * from './enums/onlineMessageType';
 export * from './enums/schedulerMessageType';
 export * from './enums/schematicMessageType';
 export * from './logger';
-export * from './models/griiotService';
-export * from './models/messageModel';
+export * from './types/griiotService';
+export * from './types/messageModel';
+export * from './types/variables';

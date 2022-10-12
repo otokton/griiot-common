@@ -1,2 +1,2 @@
-export * from './models/kongRoute';
-export * from './models/kongService';
+export * from './types/kongRoute';
+export * from './types/kongService';
