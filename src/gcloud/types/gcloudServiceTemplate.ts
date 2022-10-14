@@ -1,9 +1,4 @@
 export const GCLOUD_SERVICE_TEMPLATE = {
-  traffic: [
-    {
-      type: 'TRAFFIC_TARGET_ALLOCATION_TYPE_LATEST'
-    }
-  ],
   conditions: [
     {
       type: 'RoutesReady',
@@ -24,15 +19,6 @@ export const GCLOUD_SERVICE_TEMPLATE = {
         nanos: 906337000
       },
       severity: 'SEVERITY_UNSPECIFIED'
-    }
-  ],
-  trafficStatuses: [
-    {
-      type: 'TRAFFIC_TARGET_ALLOCATION_TYPE_LATEST',
-      revision: '',
-      percent: 100,
-      tag: '',
-      uri: ''
     }
   ],
   name: '',
