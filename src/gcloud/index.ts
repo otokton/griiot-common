@@ -1,2 +1,2 @@
 export * from './types/gcloudServiceTemplate';
-export * from './types/griiotService';
+export * from './types/griiotGcloud';
