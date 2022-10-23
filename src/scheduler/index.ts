@@ -1,2 +1,3 @@
-export * from './types/infra';
-export * from './types/schema';
+export * from './enums/infraStatusType';
+export * from './types/griiotInfra';
+export * from './types/griiotSchema';
