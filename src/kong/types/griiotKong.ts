@@ -1,3 +1,5 @@
+import { ServicesStatusType } from '../../core';
+
 export interface GriiotKong {
   serviceId: string;
   serviceName: string;
@@ -5,4 +7,5 @@ export interface GriiotKong {
   routeName: string;
   routePath: string;
   url: string;
+  status?: ServicesStatusType;
 }
