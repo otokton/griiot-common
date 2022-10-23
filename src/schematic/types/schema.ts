@@ -45,7 +45,7 @@ export interface GriiotLink {
   linkedObject: LinkedObject;
 }
 
-export interface GriiotSchema {
+export interface GriiotSchemaItem {
   id: string;
   name: string;
   roles: GriiotObject[];
