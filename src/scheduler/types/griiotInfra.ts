@@ -6,6 +6,7 @@ import { GriiotDatabase } from '../../mongodb';
 import { InfraStatusType } from '../enums/infraStatusType';
 
 export interface GriiotInfra extends AbstractType {
+  schemaId: string;
   kong: GriiotKong;
   gcloud: GriiotGloud;
   status: InfraStatusType;
