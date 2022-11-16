@@ -30,7 +30,7 @@ class UserValidator implements Validator {
           bsonType: 'object'
         },
         role: {
-          enum: ['Admin', 'User']
+          enum: ['ADMIN', 'USER']
         }
       }
     }
