@@ -1,6 +1,6 @@
 {
-  "name": "@otokton/griiot-core",
-  "version": "1.1.1",
+  "name": "@otokton/griiot-amqp",
+  "version": "1.0.3",
   "main": "index.js",
   "types": "index.d.ts",
   "author": {
@@ -15,10 +15,10 @@
   },
   "license": "MIT",
   "private": false,
-  "repository": "https://github.com/otokton/griiot-common.git",
+  "repository": "https://github.com/otokton/griiot-amqp.git",
   "dependencies": {
-    "typescript": "^4.7.4",
-    "winston": "^3.8.1"
+    "@otokton/griiot-core": "^1.1.1",
+    "typescript": "^4.7.4"
   },
   "devDependencies": {
     "@types/node": "^18.7.8"
