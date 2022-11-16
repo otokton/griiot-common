@@ -1,4 +1,4 @@
-import { ServicesStatusType } from '../../core';
+import { WorkflowStatusType } from '../enums/workflowStatusType';
 
 export interface GriiotSecret {
   name: string;
@@ -6,6 +6,6 @@ export interface GriiotSecret {
 }
 export interface GriiotWorkflow {
   lastRunId: number;
-  status: ServicesStatusType;
+  status: WorkflowStatusType;
   secrets: GriiotSecret[];
 }
