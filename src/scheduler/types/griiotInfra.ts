@@ -10,10 +10,13 @@ export interface GriiotInfra extends AbstractType {
   name: string;
   schemaId: string;
   kong: GriiotKong;
-  replyTo?: boolean;
   gcloud: GriiotGloud;
   status: InfraStatusType;
   database: GriiotDatabase;
-  github: GriiotGithubProject;
   workflow?: GriiotWorkflow;
+  github: GriiotGithubProject;
+  options?: {
+    replyTo?: boolean;
+    correlationId?: string;
+  };
 }
