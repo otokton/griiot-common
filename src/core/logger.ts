@@ -49,14 +49,14 @@ function getTitle(id: string, path: string): string {
 function getLogValue(
   domain: string,
   method: string,
-  id?: { [key: string]: string },
+  id?: { [key: string]: string | number },
   data?: unknown
 ): string {
   return `[${domain}/${method}]${getKeyValue(id)}: ${
     data ? `\ ${JSON.stringify(data)}` : ''
   }`;
 }
-function getKeyValue(id?: { [key: string]: string }): string {
+function getKeyValue(id?: { [key: string]: string | number }): string {
   const keyValue = id ? Object.entries(id)[0] : null;
   return keyValue ? `[${keyValue[0]}: ${keyValue[1]}]` : '';
 }
@@ -65,7 +65,7 @@ export class Logger {
   static info(
     domain: string,
     method: string,
-    id?: { [key: string]: string },
+    id?: { [key: string]: string | number },
     data?: unknown
   ): void {
     logger.info(getLogValue(domain, method, id, data));
@@ -74,7 +74,7 @@ export class Logger {
   static debug(
     domain: string,
     method: string,
-    id?: { [key: string]: string },
+    id?: { [key: string]: string | number },
     data?: unknown
   ): void {
     logger.debug(getLogValue(domain, method, id, data));
@@ -83,7 +83,7 @@ export class Logger {
   static error(
     domain: string,
     method: string,
-    id: { [key: string]: string },
+    id: { [key: string]: string | number },
     error: unknown
   ): void {
     logger.error(
