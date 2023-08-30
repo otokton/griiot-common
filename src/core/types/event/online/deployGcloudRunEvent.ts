@@ -1,16 +1,6 @@
 import { GriiotEvent } from '../griiotEvent';
+import { GithubRun, GithubRunInput } from './gcloudRun';
 
-export interface Secret {
-  name: string;
-  value: string;
-}
+export interface DeployGcloudRunEvent extends GriiotEvent<GithubRunInput> {}
 
-export interface DeployGcloudRunEvent extends GriiotEvent {
-  name: string;
-  service: { parent: string; name: string };
-}
-
-export interface GithubRunEvent extends GriiotEvent {
-  lastRunId?: number;
-  secrets?: Secret[];
-}
+export interface GithubRunEvent extends GriiotEvent<GithubRun> {}

@@ -15,7 +15,7 @@ export interface MessageModel<T> {
     | OnlineMessageType;
 }
 
-export interface MessageModelEvent {
+export interface MessageModelEvent<T> {
   error?: unknown;
-  event: GriiotEvent;
+  event: GriiotEvent<T>;
 }

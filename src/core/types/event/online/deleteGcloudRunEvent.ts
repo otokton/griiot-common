@@ -1,5 +1,4 @@
 import { GriiotEvent } from '../griiotEvent';
+import { GcloudRunInput } from './gcloudRun';
 
-export interface DeleteGcloudRunEvent extends GriiotEvent {
-  name: string;
-}
+export interface DeleteGcloudRunEvent extends GriiotEvent<GcloudRunInput> {}

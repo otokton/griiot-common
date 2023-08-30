@@ -1,8 +1,7 @@
 import { GriiotService } from '../../service/griiotService';
 import { GriiotEvent } from '../griiotEvent';
+import { GcloudRunInput } from './gcloudRun';
 
-export interface CreateGcloudRunEvent extends GriiotEvent {
-  name: string;
-}
+export interface CreateGcloudRunEvent extends GriiotEvent<GcloudRunInput> {}
 
-export interface GcloudRunEvent extends GriiotService, GriiotEvent {}
+export interface GcloudRunEvent extends GriiotEvent<GriiotService> {}

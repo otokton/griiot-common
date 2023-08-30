@@ -1,12 +1,9 @@
-import { GriiotSchemaItem } from '../../../../schematic';
 import { GriiotEvent } from '../griiotEvent';
+import { GithubProject, GithubProjectInput } from './githubProject';
 
-export interface CreateGithubProjectEvent extends GriiotEvent {
-  name: string;
-  mongodbUri: string;
-  schema: GriiotSchemaItem;
-}
+export interface CreateGithubProjectEvent
+  extends GriiotEvent<GithubProjectInput> {}
 
-export interface GithubProjectEvent extends GriiotEvent {
+export interface GithubProjectEvent extends GriiotEvent<GithubProject> {
   gitUrl: string;
 }

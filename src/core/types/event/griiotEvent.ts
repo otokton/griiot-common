@@ -5,11 +5,12 @@ import {
   SchematicMessageType
 } from '../../enums';
 
-export interface GriiotEvent {
+export interface GriiotEvent<T> {
   schemaId: string;
   type:
     | DatabaseMessageType
     | SchematicMessageType
     | SchedulerMessageType
     | OnlineMessageType;
+  data: T;
 }
