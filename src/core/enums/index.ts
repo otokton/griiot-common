@@ -1,6 +1,6 @@
 export * from './clientMessageType';
 export * from './databaseMessageType';
-export * from './GriiotMessageType';
+export * from './griiotMessageType';
 export * from './ioMessageType';
 export * from './messageType';
 export * from './onlineMessageType';
