@@ -1,13 +1,13 @@
-import { GriiotSchemaItem } from '../../../../schematic';
+import { SchemaOpenApi } from '../../../../schematic';
 
 export interface GithubProjectInput {
   name: string;
   mongodbUri: string;
-  schema: GriiotSchemaItem;
+  schema: SchemaOpenApi;
 }
 
 export interface GithubProject {
-  repo: string;
+  gitUrl: string;
 }
 
 export interface GithubProjectRepo {

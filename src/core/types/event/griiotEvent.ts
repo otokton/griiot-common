@@ -1,16 +1,7 @@
-import {
-  DatabaseMessageType,
-  OnlineMessageType,
-  SchedulerMessageType,
-  SchematicMessageType
-} from '../../enums';
+import { MessageType } from '../../enums';
 
 export interface GriiotEvent<T> {
-  schemaId: string;
-  type:
-    | DatabaseMessageType
-    | SchematicMessageType
-    | SchedulerMessageType
-    | OnlineMessageType;
-  data: T;
+  id: string;
+  data?: T;
+  type: MessageType;
 }

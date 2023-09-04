@@ -5,7 +5,7 @@ import { SchematicMessageType } from '../enums/schematicMessageType';
 import { GriiotEvent } from './event/griiotEvent';
 
 export interface MessageModel<T> {
-  schemaId: string;
+  id: string;
   data?: T;
   error?: unknown;
   type:
@@ -15,7 +15,6 @@ export interface MessageModel<T> {
     | OnlineMessageType;
 }
 
-export interface MessageModelEvent<T> {
+export interface MessageModelEvent<T> extends GriiotEvent<T> {
   error?: unknown;
-  event: GriiotEvent<T>;
 }
